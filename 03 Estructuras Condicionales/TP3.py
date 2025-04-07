@@ -70,3 +70,52 @@ negativo o no hay sesgo. Imprimir el resultado por pantalla.
 Definir la lista numeros_aleatorios de la siguiente forma: import random numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
 Nota: el bloque de código anterior crea una lista con 50 números entre 1 y 100 elegidos de forma aleatoria."""
 
+# from statistics import mode, median, mean #moda=mode, mediana=median, media=mean
+# import random
+
+# numeros_aleatorios = [random.randint(1, 100) for i in range (50)]
+
+# media = mean(numeros_aleatorios)
+# mediana = median(numeros_aleatorios)
+# moda = mode(numeros_aleatorios)
+
+# print("Números: ", numeros_aleatorios)
+# print("La media es: ", media)
+# print("La mediana es: ", mediana)
+# print("La moda es: ", moda)
+
+# if media > mediana and mediana > moda:
+#     print("Sesgo positivo a la derecha")
+# elif media < mediana and mediana < moda:
+#     print("Sesgo negativo a la izquierda")
+# elif media == mediana and mediana == moda:
+#     print("Sin sesgo")
+# else:
+#     print("Nada de lo anterior se cumple")
+
+#-----------------------------------------
+
+""" 7) Escribir un programa que solicite una frase o palabra al usuario. Si el string ingresado termina con vocal, añadir un signo de exclamación al final e imprimir el string resultante por
+pantalla; en caso contrario, dejar el string tal cual lo ingresó el usuario e imprimirlo por pantalla."""
+
+# #Solicito al usuario que ingrese una palabre o frase por pantalla
+# frase = (input("Ingrese una palabra o frase: ")) #no hace falta hacer str(input(frase)) ya que por defecto el input siempre devuelve un string
+
+# #Con la frase ingresada, solicit que la última letra pertenezca al conjunto de vocales "aeiou". Como el conjunto es en minúsculas y Python discrimina minúsculas y mayúsculas, hagtransformo la
+# # última letra a minúscula con lower(). 
+# if frase[-1].lower() in "aeiou":
+#     print(frase + "!") 
+# # En caso que la última letra no sea una vocal, se imprime la frase como se escribió por consola
+# else:
+#     print(frase) 
+
+#-----------------------------------------
+
+""" 8) Escribir un programa que solicite al usuario que ingrese su nombre y el número 1, 2 o 3 dependiendo de la opción que desee:
+1. Si quiere su nombre en mayúsculas. Por ejemplo: PEDRO.
+2. Si quiere su nombre en minúsculas. Por ejemplo: pedro.
+3. Si quiere su nombre con la primera letra mayúscula. Por ejemplo: Pedro.
+El programa debe transformar el nombre ingresado de acuerdo a la opción seleccionada por el usuario e imprimir el resultado por pantalla. Nota: 
+investigue uso de las funciones upper(), lower() y title() de Python para convertir entre mayúsculas y minúsculas."""
+
+
