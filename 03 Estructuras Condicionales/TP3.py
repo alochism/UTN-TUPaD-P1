@@ -161,44 +161,45 @@ por pantalla:
 Escribir un programa que pregunte al usuario en cuál hemisferio se encuentra (N/S), qué mes del año es y qué día es. El programa deberá utilizar esa información para imprimir por pantalla 
 si el usuario se encuentra en otoño, invierno, primavera o verano."""
 
-hemisferio = input("Indique en que hemisferio se encuentra, `S` para hemisferio Sur y `N` para hemisferio Norte: ") #Solicito que se ingrese por consola los tres datos solicitados, hemisferio, mes y día.
-mes = int(input("Indique en que mes del año se encuentra (1 - 12): "))
-dia = int(input("Indique en que día del año se encuentra (1 - 31): "))
-hemisferio.upper() #En caso que se ingrese el hemisferio en minúscula, de esta forma aseguro que al analizar la variable, se encuentre en mayúsculas
-hemisferio = hemisferio.upper()
+# hemisferio = input("Indique en que hemisferio se encuentra, `S` para hemisferio Sur y `N` para hemisferio Norte: ") #Solicito que se ingrese por consola los tres datos solicitados, hemisferio, mes y día.
+# mes = int(input("Indique en que mes del año se encuentra (1 - 12): "))
+# dia = int(input("Indique en que día del año se encuentra (1 - 31): "))
+# hemisferio.upper() #En caso que se ingrese el hemisferio en minúscula, de esta forma aseguro que al analizar la variable, se encuentre en mayúsculas
+# hemisferio = hemisferio.upper()
 
-if dia > 31: #Condiciono que el día indicado sea a lo sumo 31 ya que ningún mes tiene mas días. A su vez condiciono que si es Febrero, se ingrese a lo sumo el día 29. No se tienen en cuenta los años bisiestos.
-    print("Los meses del año tienen como máximo 31 días, indique una fecha correcta.")
-if mes == 2 and dia > 29:
-    print("El mes de febrero sólo tiene 29 días, indique una fecha correcta.")
+# if dia > 31: #Condiciono que el día indicado sea a lo sumo 31 ya que ningún mes tiene mas días. A su vez condiciono que si es Febrero, se ingrese a lo sumo el día 29. No se tienen en cuenta los años bisiestos.
+#     print("Los meses del año tienen como máximo 31 días, indique una fecha correcta.")
+# if mes == 2 and dia > 29:
+#     print("El mes de febrero sólo tiene 29 días, indique una fecha correcta.")
 
-#Verano/Invierno
-else:
-    if (mes == 12 and dia >=21) or (mes in [1,2]) or (mes == 3 and dia <=20): #Uso las distintas estructuras condicionales para que se vayan guardando las distintas estaciones dependiendo del hemisferio y la fecha.
-        if hemisferio == "S":
-            estacion = "Verano"
-        else:
-            estacion = "Invierno"
-#Otoño/Primavera
-    elif (mes == 3 and dia >=21) or (mes in [4,5]) or (mes == 6 and dia <=20):
-        if hemisferio == "S":
-            estacion = "Otoño"
-        else:
-            estacion = "Primavera"
-#Invierno/Verano
-    elif (mes == 6 and dia >=21) or (mes in [7,8]) or (mes == 9 and dia <=20):
-        if hemisferio == "S":
-            estacion = "Invierno"
-        else:
-            estacion = "Verano"
-#Primavera/Otoño
-    elif (mes == 9 and dia >=21) or (mes in [10,11])or (mes == 12 and dia <=20):
-        if hemisferio == "S":
-            estacion = "Primavera"
-        else:
-            estacion = "Otoño"
+# #Verano/Invierno
+# else:
+#     if (mes == 12 and dia >=21) or (mes in [1,2]) or (mes == 3 and dia <=20): #Uso las distintas estructuras condicionales para que se vayan guardando las distintas estaciones dependiendo del hemisferio y la fecha.
+#         if hemisferio == "S":
+#             estacion = "Verano"
+#         else:
+#             estacion = "Invierno"
+# #Otoño/Primavera
+#     elif (mes == 3 and dia >=21) or (mes in [4,5]) or (mes == 6 and dia <=20):
+#         if hemisferio == "S":
+#             estacion = "Otoño"
+#         else:
+#             estacion = "Primavera"
+# #Invierno/Verano
+#     elif (mes == 6 and dia >=21) or (mes in [7,8]) or (mes == 9 and dia <=20):
+#         if hemisferio == "S":
+#             estacion = "Invierno"
+#         else:
+#             estacion = "Verano"
+# #Primavera/Otoño
+#     elif (mes == 9 and dia >=21) or (mes in [10,11])or (mes == 12 and dia <=20):
+#         if hemisferio == "S":
+#             estacion = "Primavera"
+#         else:
+#             estacion = "Otoño"
 
-print(f"Siendo {dia}/{mes} y encontrandose en el hemisferio {hemisferio}, la estación es {estacion}")
+# #Finalmente imprimo la información completa de acuerdo a las tres variables ingresadas.
+# print(f"Siendo {dia}/{mes} y encontrándose en el hemisferio {hemisferio}, la estación es {estacion}")
 
 
 
