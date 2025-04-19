@@ -160,6 +160,42 @@ datos y llamar a la función para mostrar el resultado con dos decimales."""
 """ 9. Crear una función llamada celsius_a_fahrenheit(celsius) que reciba una temperatura en grados Celsius y devuelva su equivalente en Fahrenheit. Pedir al usuario la temperatura en 
 Celsius y mostrar el resultado usando la función"""
 
+# #Función celsius_a_fahrenheit(celsius)
+# def celsius_a_fahrenheit(c):
+#     return round((c * 9/5) + 32, 2) #Devuelve la conversión entre Celsius y Fahrenheit redondeado a dos decimales
+
+# #Programa Principal
+# #Solicito los grados Celsius
+# celsius = float(input("Ingrese los grados Celsius: "))
+
+# #Llama a la función de conversión de celsius a fahrenheit 
+# fahrenheit = celsius_a_fahrenheit(celsius)
+
+# #Imprime el resultado
+# print(f"{celsius} °C equivalen a {fahrenheit} °F")
+
+#----------------------------------
+
+""" 10.Crear una función llamada calcular_promedio(a, b, c) que reciba tres números como parámetros y devuelva el promedio de ellos. Solicitar los números al usuario y mostrar el resultado 
+usando esta función."""
+
+# #Función calcular_promedio(a, b, c)
+# #Defino la función y utilizo la ecuación para calcular promedios
+# def calcular_promedio(a, b, c):
+#     return (a + b + c) / 3
+
+# #Función principal
+# #Solicito tres números
+# n1 = float(input("Ingrese el primer número: "))
+# n2 = float(input("Ingrese el segundo número: "))
+# n3 = float(input("Ingrese el tercer número: "))
+
+# #Llamo a la función de cálculo de promedios de 3 números y le asigno el resultado a una variable
+# promedio = calcular_promedio(n1, n2, n3)
+
+# #Imprimo el resultado
+# print(f"El promedio entre {n1}, {n2} y {n3}: {round(promedio, 3)}")
+
 
 
 
