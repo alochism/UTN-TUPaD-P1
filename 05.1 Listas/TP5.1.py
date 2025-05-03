@@ -132,16 +132,16 @@ d) Imprimir la lista resultante por pantalla"""
 ● Posición lista_anidada[3]: False
 Imprimir la lista resultante por pantalla."""
 
-#Creo la lista anidada
-lista_anidada=[15, True, [25.5, 57.9, 30.6], False]
+# #Creo la lista anidada
+# lista_anidada=[15, True, [25.5, 57.9, 30.6], False]
 
-#Imprimo cada uno de los valores para comprobar que cumple con la consigna
-print(f"\n{lista_anidada[0]}\n")
-print(f"{lista_anidada[1]}\n")
-print(f"{lista_anidada[2][0]}\n")
-print(f"{lista_anidada[2][1]}\n")
-print(f"{lista_anidada[2][2]}\n")
-print(f"{lista_anidada[3]}\n")
+# #Imprimo cada uno de los valores para comprobar que cumple con la consigna
+# print(f"\n{lista_anidada[0]}\n")
+# print(f"{lista_anidada[1]}\n")
+# print(f"{lista_anidada[2][0]}\n")
+# print(f"{lista_anidada[2][1]}\n")
+# print(f"{lista_anidada[2][2]}\n")
+# print(f"{lista_anidada[3]}\n")
 
-#Finalmente imprimo la lista completa
-print(f"{lista_anidada}\n")
+# #Finalmente imprimo la lista completa
+# print(f"{lista_anidada}\n")
