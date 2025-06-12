@@ -134,15 +134,15 @@ el total de bloques que necesita para construir toda la pirámide."""
 """Escribí una función recursiva llamada contar_digito(numero, digito) que reciba un número entero positivo (numero) y 
 un dígito (entre 0 y 9), y devuelva cuántas veces aparece ese dígito dentro del número."""
 
-n = int(input("Ingrese un número entero positivo: "))
-digito = int(input("Ingrese el dígito (0 a 9) que desea contar: "))
+# n = int(input("Ingrese un número entero positivo: "))
+# digito = int(input("Ingrese el dígito (0 a 9) que desea contar: "))
 
-def contar_digito(n, digito):
-    if n == 0: # Caso base, el número no tiene más dígitos
-        return 0 
-    else:
-        ultimo = n % 10 # Valúo el último dígito del número
-        contador = 1 if ultimo == digito else 0  # Si el último dígito es igual al buscado, suma 1, sino suma 0
-        return contador + contar_digito(n // 10, digito) # Recursión se elimina el último dígito (n // 10) y se vuelve a llamar
+# def contar_digito(n, digito):
+#     if n == 0: # Caso base, el número no tiene más dígitos
+#         return 0 
+#     else:
+#         ultimo = n % 10 # Valúo el último dígito del número
+#         contador = 1 if ultimo == digito else 0  # Si el último dígito es igual al buscado, suma 1, sino suma 0
+#         return contador + contar_digito(n // 10, digito) # Recursión se elimina el último dígito (n // 10) y se vuelve a llamar
 
-print(f"La cantidad de veces que {digito} aparece en {n} es: {contar_digito(n, digito)}")
+# print(f"La cantidad de veces que {digito} aparece en {n} es: {contar_digito(n, digito)}")
